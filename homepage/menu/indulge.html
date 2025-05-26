@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bakery menu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anta&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <script src="../assets/smoothscroll/smooth-scroll.js"></script>
+    <style>
+        body {
+        font-family: "caveat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6e6fa;
+        color: black;
+        }
+        
+        header {
+        background-image: url("assets/header2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffff99;
+        text-align: center;
+        padding: 5em;
+        }
+        
+        .header-content {
+        max-width: 800px;
+        margin-left: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .header-name {
+        font-size: 120px;
+        margin: 0;
+        width: 900px;
+        text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.662);
+        }
+        
+        .colour2 {
+        color: #98fb98;
+        }
+        
+        .head-colour{
+        color:rgb(255, 170, 170);
+        }
+        
+        .colour1 {
+        color: #add8e6;
+        }
+        
+        nav {
+        text-align: center;
+        padding: 1em;
+        position: sticky;
+        top: 0;
+        background-color: #ffc0cb;
+        z-index: 10;
+        }
+        
+        nav a {
+        color: rgb(173, 53, 141);
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 10px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 33px;
+        transition: 0.3s;
+        }
+        
+        nav a:hover {
+        color: rgb(255, 255, 255);
+        background-color: #9ae57fe8;
+        border-radius: 50px;
+        padding: 30px;
+        margin: 30px;
+        }
+        
+        
+        
+        /* main container */
+        .main-container{
+        transition: transform 1s;
+        }
+        /* main items sections */
+        
+        .container {
+        display: flex;
+        margin-top: 30px;
+        }
+        
+        .container h1 {
+        text-align: center;
+        }
+        
+        .container h2 {
+        margin-left: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        padding: 20px;
+        border-radius: 50px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        }
+        
+        .container img {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        }
+        
+        .container a {
+        text-decoration: none;
+        margin-left: 25%;
+        background-color: rgb(255, 255, 185);
+        padding: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+        border-radius: 30px;
+        color: black;
+        }
+        
+        /* Margin for all img*/
+        .margin {
+        margin: 20px;
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        padding: 20px;
+        border-radius: 20px;
+        }
+        
+        /* normal cakes */
+        
+        #cakes h2 {
+        background-color: #add8e6;
+        padding-top: 215px;
+        }
+        
+        .Decadent-Cakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 100% 0;
+        margin: 20px;
+        position: relative;
+        top: 4%;
+        }
+        .Celebration-Cakes h1{
+        margin-top: 0;
+        }
+        .Celebration-Cakes img {
+        width: 180px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 100% 100%;
+        margin: 20px;
+        position: relative;
+        left: 10%;
+        padding-bottom: 20px;
+        }
+        
+        .Specialty-Cakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 100% 0%;
+        margin: 20px;
+        }
+        
+        .Fruit-Cakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 100% 120%;
+        margin: 20px;
+        }
+        
+        .Chocolate-Cakes h1{
+        margin-top: 0;
+        }
+        .Chocolate-Cakes img {
+        width: 230px;
+        height: 230px;
+        padding-bottom: 30px;
+        object-fit: cover;
+        object-position: 50% -10px;
+        margin: 20px;
+        position: relative;
+        top: 3%;
+        }
+        
+        /* cookies */
+        
+
+        .Cookie-carnival img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 100% 0%;
+        margin: 20px;
+        }
+        
+        .Gourmet-Cookies img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 50% 0%;
+        margin: 20px;
+        }
+        
+        .Frosted-Cookies img {
+        width: 260px;
+        height: 220px;
+        object-fit: cover;
+        object-position: 60% 100%;
+        margin: 0px;
+        left: 3%;
+        top: 6%;
+        position: relative;
+        margin-bottom: 50px;
+        }
+        
+        .Vegan-Cookies img {
+        width: 230px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 100% 100%;
+        margin-bottom: 65px;
+        position: relative;
+        top: 7%;
+        left: 7%;
+        }
+        
+        .Nutty-Cookies img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 50% 0%;
+        margin: 20px;
+        }
+        
+        /* cupcakes */
+        
+        #cupcakes h2 {
+        background-color: #98fb98;
+        padding-top: 220px;
+        }
+        
+        
+        .cupcake-craze img {
+        width: 160px;
+        height: 180px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        margin: 20px;
+        padding-left: 40px;
+        padding-top: 40px;
+        position: relative;
+        margin-bottom: 0px;
+        bottom: 5%;
+        }
+        
+        .Signature-Cupcakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        position: relative;
+        left: 20px;
+        margin-bottom: 10px;
+        }
+        
+        .Velvet-Cupcakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 100% 100%;
+        margin-bottom: 10px;
+        top: 7%;
+        position: relative;
+        }
+        
+        .Fruity-Cupcakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        left: 7%;
+        position: relative;
+        margin-bottom: 5px;
+        }
+        
+        .Classic-Cupcakes img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        position: relative;
+        left: 8%;
+        top: 5%;
+        margin-bottom: 5px;
+        }
+        
+        /* breads */
+        
+        #breads h2 {
+        background-color: #ffa9a9;
+        padding-top: 260px;
+        }
+        
+        .Croissants img {
+        width: 230px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        margin: 20px;
+        }
+        
+        .Artisan-Breads img {
+        width: 230px;
+        height: 200px;
+        top: 2%;
+        position: relative;
+        object-fit: cover;
+        object-position: 50% 100%;
+        margin: 20px;
+        }
+        
+        .Wholegrain-Breads img {
+        width: 230px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        margin: 20px;
+        }
+        
+        .Sourdough-Breads img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        margin: 20px;
+        top: 5%;
+        position: relative;
+        }
+        
+        .Baguettes img {
+        width: 230px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        margin: 20px;
+        position: relative;
+        right: 10%;
+        top: 5%;
+        }
+        
+        /* contact */
+        
+        #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .h2-contact {
+        background-color: rgb(255, 255, 255);
+        padding: 2px 873px;
+        margin: 20px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 50px;
+        }
+        
+        form {
+        font-size: 30px;
+        }
+        
+        input {
+        border: 0px;
+        font-size: 20px;
+        padding: 20px;
+        padding-right: 300px;
+        border-radius: 50px;
+        }
+        
+        #message {
+        border: 0px;
+        font-size: 40px;
+        border-radius: 50px;
+        padding: 20px;
+        }
+        
+        .message-button {
+        margin-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-family: caveat;
+        font-size: 30px;
+        padding: 20px;
+        border: 0px;
+        border-radius: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: white;
+        }
+        
+        footer{
+        background-color: rgb(169, 169, 169);
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 20px;
+        }
+        footer p{
+        margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-right">
+                <h1 class="header-name">
+                    <span class="colour1">✿</span> 
+                    <span class="head-colour">Sweet Bites</span>
+                    <span class="colour2">✿</span>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#cakes">Delicious Bakery Delights</a>
+        <a href="#cookies1">Cookie Treats</a>
+        <a href="#cupcakes">Tempting Cupcakes</a>
+        <a href="#breads">Delightful Breads</a>
+    </nav>
+
+    <div class="main-container">
+        <section id="cakes" class="container">
+            <h2>Delicious Bakery Delights</h2>
+            <div class="Decadent-Cakes margin">
+                <img src="assets/normal-cakes/cake.png" alt="Decadent Cake" />
+                <h1>Decadent Cakes</h1>
+                <p>Celebrate Every Occasion with Our Heavenly Cakes</p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: Starting at ₹150 per cake</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Celebration-Cakes margin">
+                <img src="assets/normal-cakes/celebration_cake.png" alt="Celebration Cake" />
+                <h1>Celebration Cakes</h1>
+                <p>Make every moment special with our exquisite celebration cakes</p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: Starting at ₹200 per cake</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Specialty-Cakes margin">
+                <img src="assets/normal-cakes/speciality_cake.png" alt="Specialty Cake" />
+                <h1>Specialty Cakes</h1>
+                <p>Unique cakes crafted for your special occasions</p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: Starting at ₹180 per cake</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Fruit-Cakes margin">
+                <img src="assets/normal-cakes/fruit_cake.png" alt="Fruit Cake" />
+                <h1>Fruit Cakes</h1>
+                <p>Delightful cakes infused with the goodness of fresh fruits</p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: Starting at ₹170 per cake</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Chocolate-Cakes margin">
+                <img src="assets/normal-cakes/chocolate_cake.png" alt="Chocolate Cake" />
+                <h1>Chocolate Cakes</h1>
+                <p>Indulge in rich and decadent chocolate cakes</p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: Starting at ₹160 per cake</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+        </section>
+
+        <section class="container" id="cookies1">
+            <h2 style="background-color: #ffe4c4; padding-top: 240px;">Cookie Treats</h2>
+            <div class="Cookie-carnival margin">
+                <img src="assets/cookies/cookie-carnival.png" alt="Cookie Carnival" />
+                <h1>Cookie Carnival</h1>
+                <p>Crunchy, chewy cookies that will leave you wanting more</p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: Starting at ₹20 per pack</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Gourmet-Cookies margin">
+                <img src="assets/cookies/gourmet-cookies.png" alt="Gourmet Cookies" />
+                <h1>Gourmet Cookies</h1>
+                <p>
+                    Indulge in our gourmet cookies, a perfect balance of sweetness and
+                    crunch
+                </p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: Starting at ₹25 per pack</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Frosted-Cookies margin">
+                <img src="assets/cookies/frosted-cookies.png" alt="Frosted Cookies" />
+                <h1>Frosted Cookies</h1>
+                <p>Delicious cookies topped with creamy frosting</p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: Starting at ₹22 per pack</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Vegan-Cookies margin">
+                <img src="assets/cookies/vegan-cookies.png" alt="Vegan Cookies" />
+                <h1>Vegan Cookies</h1>
+                <p>Enjoy guilt-free indulgence with our vegan cookies</p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: Starting at ₹28 per pack</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Nutty-Cookies margin">
+                <img src="assets/cookies/nutty-cookies.png" alt="Nutty Cookies" />
+                <h1>Nutty Cookies</h1>
+                <p>Delightful cookies packed with nutritious nuts</p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: Starting at ₹30 per pack</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+        </section>
+
+        <section id="cupcakes" class="container">
+            <h2>Tempting Cupcakes</h2>
+            <div class="cupcake-craze margin">
+                <img src="assets/cupcakes/cupcake.png" alt="Cupcake Craze" />
+                <h1>Cupcake Craze</h1>
+                <p>Indulge in fluffy, Frosty Cupcakes that melt in your Mouth</p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: ₹30 each</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Signature-Cupcakes margin">
+                <img src="assets/cupcakes/signature-cupcake.png" alt="Signature Cupcakes" />
+                <h1>Signature Cupcakes</h1>
+                <p>
+                    Our signature cupcakes are a delightful blend of flavors and
+                    toppings
+                </p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: ₹40 each</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Velvet-Cupcakes margin">
+                <img src="assets/cupcakes/red-velvet-cupcake.png" alt="Red Velvet Cupcakes" />
+                <h1>Red Velvet Cupcakes</h1>
+                <p>
+                    Indulge in the velvety goodness of our classic red velvet cupcakes
+                </p>
+                <p>Nutritional Value: High in calories and sugar</p>
+                <h4>Price: ₹35 each</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Fruity-Cupcakes margin">
+                <img src="assets/cupcakes/fruity-cupcake.png" alt="Fruity Cupcakes" />
+                <h1>Fruity Cupcakes</h1>
+                <p>Delicious cupcakes bursting with the flavors of fresh fruits</p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: ₹38 each</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Classic-Cupcakes margin">
+                <img src="assets/cupcakes/classic-cupcakes.png" alt="Classic Cupcakes" />
+                <h1>Classic Cupcakes</h1>
+                <p>Enjoy the timeless charm of our classic cupcakes</p>
+                <p>Nutritional Value: Moderate calories and sugar</p>
+                <h4>Price: ₹32 each</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+        </section>
+
+        <section id="breads" class="container">
+            <h2>Delightful Breads</h2>
+            <div class="Croissants margin">
+                <img src="assets/breads/croissant.png" alt="Croissants" />
+                <h1>Croissants</h1>
+                <p>
+                    Buttery and flaky croissants, perfect for breakfast or as a snack
+                </p>
+                <p>Nutritional Value: Contains moderate calories and fat</p>
+                <h4>Price: Starting at ₹65 per piece</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Artisan-Breads margin">
+                <img src="assets/breads/artisan-bread.png" alt="Artisan Breads" />
+                <h1>Artisan Breads</h1>
+                <p>Savor the aroma and taste of our artisan bread collection</p>
+                <p>Nutritional Value: Low in calories and sugar</p>
+                <h4>Price: Starting at ₹60 per loaf</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Wholegrain-Breads margin">
+                <img src="assets/breads/whole-grain-bread.png" alt="Wholegrain Breads" />
+                <h1>Wholegrain Breads</h1>
+                <p>Healthy and nutritious bread made from whole grains</p>
+                <p>Nutritional Value: High in fiber, low in calories</p>
+                <h4>Price: Starting at ₹70 per loaf</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Sourdough-Breads margin">
+                <img src="assets/breads/sourdough-bread.png" alt="Sourdough Breads" />
+                <h1>Sourdough Breads</h1>
+                <p>Enjoy the tangy flavor and chewy texture of our sourdough bread</p>
+                <p>Nutritional Value: Low in calories and sugar</p>
+                <h4>Price: Starting at ₹65 per loaf</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+            <div class="Baguettes margin">
+                <img src="assets/breads/baugette-bread.png" alt="Baguettes" />
+                <h1>Baguettes</h1>
+                <p>Classic French baguettes, perfect for sandwiches or dipping</p>
+                <p>Nutritional Value: Low in calories and sugar</p>
+                <h4>Price: Starting at ₹55 per loaf</h4>
+                <a href="order.html">Add to Cart</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="h2-contact">
+                <h2>Get in Touch</h2>
+            </div>
+
+            <form>
+                <br />
+                <label for="name">Name: &nbsp</label>
+                <input type="text" id="name" name="name" required />
+                <br /><br />
+                <label for="email">Email:&nbsp&nbsp</label>
+                <input type="email" id="email" name="email" required />
+                <br /><br />
+                <label for="message">Message: &nbsp</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br />
+                <button class="message-button" type="submit">Send Message</button>
+            </form>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>© 2024 Sweet Bites. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

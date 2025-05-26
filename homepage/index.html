@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sweet Bites</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Anton&family=Bebas+Neue&family=Caveat:wght@400..700&family=Indie+Flower&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <style>
+    header{
+      display: sticky;
+    justify-content: center;
+    align-items: center;
+    }
+    .navbar{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 40px;
+    padding: 10px 20px;
+    z-index: 10;
+    background-color: rgb(255 255 255 / 20%);
+    backdrop-filter: blur(10px);
+        margin-top: 20px;
+        margin-left: 3%;
+    }
+    </style>
+  </head>
+  <!-- remember not to bite your finger! -->
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="assets/logo.jpeg" alt="Logo" style="border-radius: 40px" />
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="menu/indulge.html">Cakes</a></li>
+          <li class="nav-item"><a href="menu/indulge.html">Cupcakes</a></li>
+          <li class="nav-item"><a href="menu/indulge.html">Breads</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="Delicious-delight-section">
+      <div class="content">
+        <div class="text1">
+          <h2>Sweet Bites</h2>
+          <p>
+            Indulge in symphony of sweetness - Cupcakes, Cakes, Breads, Cookies
+            and more!
+          </p>
+          <a href="menu/indulge.html">Explore Now</a>
+        </div>
+        <div class="welcome">
+          <video autoplay loop muted src="assets/welcome.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-sweetbites">
+      <div id="box2">
+        <h2>About Sweetbites</h2>
+        <p>
+          Welcome to SweetBites, where every bite is a sweet escape into a world
+          of flavors and happiness.
+        </p>
+        <p>
+          Our passion for baking drives us to create the most delectable treats
+          that will tantalize your taste buds and leave you craving for more.
+        </p>
+        <p>
+          Join us on this sugary adventure and let your senses be enchanted by
+          the magic of our baked creations.
+        </p>
+      </div>
+    </section>
+
+    <section class="sweet-cravings">
+      <strong>
+        Satisfy Your Sweet <br />
+        Cravings Today!
+      </strong>
+      <br>
+    
+      <p>
+        Ready to embark on a sugar-filled journey? <br><br> Choose your favorite treats,
+        add them to your cart, and get ready to indulge in a delightful dining
+        experience at SweetBites!
+      </p>
+      <a href="menu/indulge.html" class="button1">indulge</a>
+    </section>
+
+    <div class="guarantee-section">
+      <div>
+        <h2>100%</h2>
+        <p>Satisfaction Guaranteed</p>
+      </div>
+      <div>
+        <h2>11am to 9pm</h2>
+        <p>Order Anytime</p>
+      </div>
+      <div>
+        <h2>Fast Service</h2>
+        <p>Speedy Order</p>
+      </div>
+
+    </div>
+
+    <section>
+      <div class="fun">
+        <h2>Join the fun!</h2>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="h2-contact">
+          <h2>Get in Touch</h2>
+      </div>
+
+      <form>
+          <br />
+          <label for="name">Name: &nbsp</label>
+          <input type="text" id="name" name="name" required />
+          <br /><br />
+          <label for="email">Email:&nbsp&nbsp</label>
+          <input type="email" id="email" name="email" required />
+          <br /><br />
+          <label for="message">Message: &nbsp</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <br />
+          <button class="message-button" type="submit">Send Message</button>
+      </form>
+  </section>
+    <footer>
+      <p>© 2024 Sweet Bites. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

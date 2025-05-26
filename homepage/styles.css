@@ -1,0 +1,263 @@
+/* nav bar ke liye */
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+  background-color: #f2770b8c;
+}
+.navbar {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 40px;
+    padding: 10px 20px;
+    z-index: 10;
+    background-color: rgb(255 255 255 / 20%);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: auto;
+}
+.nav-item {
+  display: inline-block;
+  list-style: none;
+}
+.nav-item a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-item a:hover {
+  color: #98e31f;
+}
+
+.Delicious-delight-section {
+  width: 100%;
+  height: 400px;
+  padding-bottom: 300px;
+  margin-bottom: 450px;
+}
+
+.content {
+  /* position: absolute; */
+  color: rgb(0, 0, 0);
+}
+
+/* for the video */
+.welcome{
+  position:relative;
+  z-index:1;
+}
+
+.text1{
+  z-index:2;
+  position:absolute;
+  top:500px;
+  left:60px;
+  margin-left:100px
+}
+
+.content h2 {
+  font-size: 70px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  color: rgb(255, 192, 145);
+}
+
+.content p {
+  font-size: 20px;;
+  margin-bottom: 20px;
+  font-weight:400;
+  color:white;
+}
+
+.content a {
+  font-size:20px;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #fdfcfc;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+/* about sweetbites */
+
+
+
+/* indulge wala hai main */
+.sweet-cravings {
+  background-color: rgb(240, 232, 232);
+  padding: 40px;
+  text-align: center;
+  font-size: 60px;
+  height: 400px;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding-top:100px;
+  margin: 50px;
+  border-radius: 50px;
+  padding-bottom: 100px;
+}
+
+.sweet-cravings p {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  font-size: 25px;
+}
+
+.button1 {
+  background-color: #ed521a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+#box2 {
+  padding: 40px;
+  margin: 50px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+#box2 h2 {
+  font-size: 70px;
+}
+#box2 p {
+  font-size: 40px;
+}
+.fun {
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.fun .fab {
+  font-size: 80px;
+  margin: 20px;
+  color: #6412f1;
+}
+.guarantee-section {
+  background-color: #ffffff; /* white background color */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* box shadow */
+  padding: 300px;
+  margin:50px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  display:flex;
+  flex-direction: coloumn;
+}
+
+/* Style for the text inside the div */
+ .guarantee-section h2 {
+  color: #f55d3e; /* orange text color */ /* display in a single row */
+  margin: 0; /* remove default margin */
+}
+.guarantee-section p{
+  font-weight: 600;
+  margin: 0;
+}
+
+/* contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2-contact {
+  background-color: rgb(255, 255, 255);
+  padding: 2px 873px;
+  margin: 20px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 50px;
+}
+
+form {
+  font-size: 30px;
+}
+
+input {
+  border: 0px;
+  font-size: 20px;
+  padding: 20px;
+  padding-right: 300px;
+  border-radius: 50px;
+}
+
+#message {
+  border: 0px;
+  font-size: 40px;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.message-button {
+  margin-left: 200px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  padding: 20px;
+  border: 0px;
+  border-radius: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: white;
+}
+
+/* footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: start;
+  font-size: 30px;
+  padding-top: 45px;
+}
+footer p {
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: rgb(138, 173, 225);
+}
